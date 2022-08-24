@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "tvshow",
+    "name": "TV Show",
+    "description": "A mod that can stream to a specified RTMP server. It also has TV equipment.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "BachErik"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
