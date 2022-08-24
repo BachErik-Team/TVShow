@@ -3,8 +3,8 @@
     "modid": "tvshow",
     "name": "TV Show",
     "description": "A mod that can stream to a specified RTMP server. It also has TV equipment.",
-    "version": "${version}",
-    "mcversion": "${mcversion}",
+    "version": "1.0-SNAPSHOT",
+    "mcversion": "1.12.2",
     "url": "",
     "updateUrl": "",
     "authorList": [
