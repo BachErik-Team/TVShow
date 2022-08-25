@@ -1,6 +1,8 @@
 package de.bacherik.tvshow;
 
+import de.bacherik.tvshow.entities.EntityInit;
 import de.bacherik.tvshow.proxy.CommonProxy;
+import de.bacherik.tvshow.util.RenderHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -21,6 +23,9 @@ public class Main {
 
     private static Logger logger;
 
+    // Entity id's
+    public static final int ENTITY_CENTAUR = 99999;
+
     @SidedProxy(clientSide = "de.bacherik.tvshow.proxy.ClientProxy", serverSide = "de.bacherik.tvshow.proxy.ServerProxy")
     private static CommonProxy proxy;
 
@@ -38,6 +43,8 @@ public class Main {
     public void preinit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
         proxy.preInitializationEvent(event);
+        EntityInit.registerEntities();
+        RenderHandler.registerEntityRenders();
     }
 
     /**
